@@ -19,11 +19,11 @@ workflows:
         script: |
           cd "src"
           pod install
-          - name: Fetch signing files
-    script: |
-      app-store-connect fetch-signing-files "com.yuliqmadiq.thebutton" \
-        --type IOS_APP_STORE \
-        --create
+      - name: Fetch signing files
+        script: |
+          app-store-connect fetch-signing-files "com.yuliqmadiq.thebutton" \
+            --type IOS_APP_STORE \
+            --create
       - name: Set up code signing settings on Xcode project
         script: |
           xcode-project use-profiles
