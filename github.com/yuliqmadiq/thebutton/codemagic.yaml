@@ -6,7 +6,7 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: app.onhercules.native-ios-app-482746
+        bundle_identifier: com.yuliqmadiq.thebutton
       vars:
         XCODE_WORKSPACE: "src/The Button.xcworkspace"
         XCODE_SCHEME: "The Button"
