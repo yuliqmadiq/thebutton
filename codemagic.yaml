@@ -6,6 +6,12 @@ workflows:
     integrations:
       app_store_connect: Codemagic
     environment:
+      groups:
+        - ios_signing
+      vars:
+        XCODE_WORKSPACE: "src/The Button.xcworkspace"
+        XCODE_SCHEME: "The Button"
+        BUNDLE_ID: "com.yuliqmadiq.thebutton"
       vars:
         XCODE_WORKSPACE: "src/The Button.xcworkspace"
         XCODE_SCHEME: "The Button"
